@@ -13,4 +13,4 @@ Detalhes sobre a instalação do CDS API se encontra [aqui](https://github.com/D
 
 3 - Intruduzir dados do período de interesse;
 
-Obs.: O arquivo gerado conterá dados de espectro horário de um dia específico e será salvo no mesmo diretório onde foi criado o arquivo 
+Obs.: O arquivo gerado conterá dados de espectro horário de um dia específico e será salvo no mesmo diretório onde foi criado o arquivo com extensão .cdsapirc.
