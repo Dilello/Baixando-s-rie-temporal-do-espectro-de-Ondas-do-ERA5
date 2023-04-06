@@ -18,10 +18,10 @@ ano = '2022'
 
 # DECODIFICANDO O ESPECTRO 
 for i in np.arange(0,len(datas)):
-    da = xr.open_dataarray('ERA5_DetSpec_'+str(i)+mes+ano+'.nc')
+    da = xr.open_dataarray('ERA5_DetSpec_'+str(i+1)+mes+ano+'.nc')
     da = da.assign_coords(direction=np.arange(7.5, 352.5 + 15, 15))
     da = da.assign_coords(frequency=np.full(30, 0.03453) * (1.1 ** np.arange(0, 30)))
     da = 10 ** da
     da = da.fillna(0)
-    da.to_netcdf(path='ERA5_DetSpec_'+str(i)+mes+ano+'_recoded.nc')
+    da.to_netcdf(path='ERA5_DetSpec_'+str(i+1)+mes+ano+'_recoded.nc')
 ####### FIM ###########
