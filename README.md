@@ -9,8 +9,8 @@ Detalhes sobre a instalação do CDS API se encontra [aqui](https://github.com/D
 ## Executando download do espectro horário de ondas gerado por previsão determinística do ERA5-ECMWF
 1 - Abrir o arquivo [ERA5_2DwaveSpectra_load.py](https://github.com/Dilello/DownloadERA5_2DWaveSpectra/blob/main/ERA5_2DwaveSpectra_load.py)
 
-2 - Introduzir os limites em latitude e longitude do recorte espacial de interesse;
+2 - Introduzir os limites em latitude e longitude do recorte espacial de interesse (linhas 17 a 20);
 
-3 - Intruduzir dados do período de interesse;
+3 - Intruduzir dados do período de interesse (linhas 23 a 25);
 
 Obs.: O arquivo gerado conterá dados de espectro horário de um dia específico e será salvo no mesmo diretório onde foi criado o arquivo com extensão .cdsapirc.
