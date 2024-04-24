@@ -18,7 +18,7 @@ Detalhes sobre a instalação do CDS API se encontra [aqui](https://github.com/D
 Obs.: O arquivo gerado armazena dados de espectro horário de um dia específico e será salvo no mesmo diretório onde foi criado o arquivo com extensão .cdsapirc.
 
 ## Decodificando espectros de onda 2D no NetCDF
-1 - Abrir o arquivo [ERA5_2DwaveSpectra_recoded.py](https://github.com/Dilello/DownloadERA5_2DWaveSpectra/blob/main/ERA5_2DwaveSpectra_recoded.py);
+1 - Abrir o arquivo [ERA5_2DwaveSpectra_recoded.py](https://github.com/Dilello/DownloadERA5_2DWaveSpectra/blob/main/ERA5_2DwaveSpectra_recoder.py);
 
 2 - Intruduzir dados do período de interesse;
 
