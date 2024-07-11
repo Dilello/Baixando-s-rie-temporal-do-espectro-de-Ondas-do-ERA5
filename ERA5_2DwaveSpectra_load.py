@@ -21,7 +21,7 @@ latNorth=-16
 
 # PERÍODO DE INTERESSE
 datas = pd.date_range('2022-8-1','2022-8-31').astype(str)
-mes = 'ago'
+mes = '08'
 ano = '2022'
 
 # DOWNLOAD DOS DADOS
@@ -42,6 +42,6 @@ for i in np.arange(0,len(datas)):
     'grid': '0.5/0.5', # Latitude/longitude. Default: spherical harmonics or reduced Gaussian grid
     'type': 'an',
     'format': 'netcdf', 
-    },  'ERA5_DetSpec_'+str(i+1)+mes+ano+'.nc') # Arquivo será salvo no mesmo diretório onde se encontra .cdsapirc
+    },  'ERA5_DetSpec_'+ano+mes+str(i+1)+'.nc') # Arquivo será salvo no mesmo diretório onde se encontra .cdsapirc
 
 ####### FIM ###########
