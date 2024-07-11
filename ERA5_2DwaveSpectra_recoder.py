@@ -13,7 +13,7 @@ import numpy as np
 
 # PERÍODO DE INTERESSE
 datas = pd.date_range('2022-8-1','2022-8-31').astype(str)
-mes = 'ago'
+mes = '08'
 ano = '2022'
 
 # DECODIFICANDO O ESPECTRO 
@@ -23,5 +23,5 @@ for i in np.arange(0,len(datas)):
     da = da.assign_coords(frequency=np.full(30, 0.03453) * (1.1 ** np.arange(0, 30)))
     da = 10 ** da
     da = da.fillna(0)
-    da.to_netcdf(path='ERA5_DetSpec_'+str(i+1)+mes+ano+'_recoded.nc')
+    da.to_netcdf(path='ERA5_DetSpec_'+ano+mes+str(i+1)+'_recoded.nc')
 ####### FIM ###########
